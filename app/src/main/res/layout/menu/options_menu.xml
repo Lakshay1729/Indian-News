@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:name="Business" android:id="@+id/busines" android:title="Business" app:showAsAction="never"/>
+    <item android:id="@+id/sports" android:title="Sports" app:showAsAction="never"/>
+    <item android:name="Business" android:id="@+id/Science" android:title="Science" app:showAsAction="never"/>
+    <item android:name="Business" android:id="@+id/entertainment" android:title="Entertainment" app:showAsAction="never"/>
+    <item android:name="Business" android:id="@+id/health" android:title="Health" app:showAsAction="never"/>
+</menu>

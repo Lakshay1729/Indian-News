@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <item-->
+<!--        android:id="@+id/busines"-->
+<!--        android:name="Business"-->
+<!--        android:title="Business"-->
+<!--        app:showAsAction="never" />-->
+<!--    <item-->
+<!--        android:id="@+id/sports"-->
+<!--        android:title="Sports"-->
+<!--        app:showAsAction="never" />-->
+<!--    <item-->
+<!--        android:id="@+id/Science"-->
+<!--        android:name="Business"-->
+<!--        android:title="Science"-->
+<!--        app:showAsAction="never" />-->
+<!--    <item-->
+<!--        android:id="@+id/entertainment"-->
+<!--        android:name="Business"-->
+<!--        android:title="Entertainment"-->
+<!--        app:showAsAction="never" />-->
+<!--    <item-->
+<!--        android:id="@+id/health"-->
+<!--        android:name="Business"-->
+<!--        android:title="Health"-->
+<!--        app:showAsAction="never" />-->
+<!--    <item-->
+<!--        android:id="@+id/general"-->
+<!--        android:name="General"-->
+<!--        android:title="General"-->
+<!--        app:showAsAction="never" />-->
+<!--    <item-->
+<!--        android:id="@+id/technology"-->
+<!--        android:name="Technology"-->
+<!--        android:title="Technology"-->
+<!--        app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/button"
+        android:title="Menu"
+        android:icon="@android:drawable/ic_menu_view"
+        android:iconTint="#ffff"
+        app:showAsAction="always"
+        android:orderInCategory="10"
+
+
+        >
+
+    </item>
+    <item android:id="@+id/search"
+        android:title="Search article"
+        android:icon="@android:drawable/ic_menu_search"
+        android:iconTint="#ffff"
+        app:showAsAction="collapseActionView|ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+</menu>
