@@ -56,6 +56,7 @@ import androidx.recyclerview.widget.RecyclerView.State;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener;
 
+import com.android.volley.AuthFailureError;
 import com.android.volley.NetworkResponse;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -81,6 +82,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
 import java.util.Objects;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -393,12 +395,25 @@ AppCompatImageButton b1,b2,b3,b4,b5,b6,b7;
                                 e2.printStackTrace();
                             }
                         }
-                        Toast.makeText(MainActivity.this, "" + error.getStackTrace()[0], Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "Problemo" + error.getMessage(), Toast.LENGTH_LONG).show();
+//                        Log.d("Dikkat",error.getMessage());
 
                     }
 
 
-                });
+                }){
+            @Override
+
+            public Map<String,String> getHeaders() throws AuthFailureError{
+                HashMap<String, String> headers = new HashMap<String, String>();
+                //headers.put("Content-Type", "application/json");
+                headers.put("User-Agent", "Mozilla/5.0");
+                return headers;
+
+            }
+        };
+
+
         q.add(jsonObjectRequest);
     }
 
