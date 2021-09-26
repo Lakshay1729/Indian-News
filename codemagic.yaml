@@ -3,10 +3,10 @@ workflows:
     name: Native Android
     max_build_duration: 60
     scripts:
-      - name: Build debug apk
-        script: ./gradlew assembleDebug
       - name: Make executable
         script: chmod +x gradlew
+      - name: Build debug apk
+        script: ./gradlew assembleDebug
     artifacts:
       - app/build/**/outputs/**/*.apk
     publishing:
