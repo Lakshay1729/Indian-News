@@ -6,7 +6,7 @@ workflows:
       - name: Build debug apk
         script: ./gradlew assembleDebug
       - name: Make executable
-        script: chmod -x gradlew
+        script: chmod +x gradlew
     artifacts:
       - app/build/**/outputs/**/*.apk
     publishing:
