@@ -1,0 +1,6 @@
+workflows:
+  my-workflow:
+    publishing:
+      email:
+        recipients:
+          - garglakshay56@gmail.com
